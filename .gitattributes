@@ -1,0 +1,5 @@
+*.slx binary
+*.mdl text
+*.svg text
+*.ino text
+*.m text

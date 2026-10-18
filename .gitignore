@@ -1,0 +1,21 @@
+# MATLAB / Simulink generated files
+slprj/
+*.slxc
+*.mex*
+*.asv
+*.m~
+*.autosave
+*.autosave.slx
+*.bak
+# Arduino generated build artifacts
+*.elf
+*.hex
+*.bin
+build/
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# Only publish media deliberately; keep raw personal recordings private
+*.m4a

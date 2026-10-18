@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="510" viewBox="0 0 1200 510" role="img" aria-label="One-degree-of-freedom master paddle commands LEGO slave arm; filtered ultrasonic distance controls directional force feedback through DC motor">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1426"/><stop offset="1" stop-color="#152941"/></linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#73daf0"/></marker>
+    <marker id="yellow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#ffcd79"/></marker>
+    <style>.h{font:700 29px Arial,sans-serif;fill:#f5f9ff}.s{font:14px Arial,sans-serif;fill:#adc5dc}.t{font:700 18px Arial,sans-serif;fill:#f5f9ff}.d{font:14px Arial,sans-serif;fill:#c9d9ea}.l{font:700 13px Arial,sans-serif;fill:#86edff}.pill{font:700 12px Arial,sans-serif;fill:#0e2433}</style>
+  </defs>
+  <rect width="1200" height="510" fill="url(#bg)" rx="18"/>
+  <text x="42" y="53" class="h">HAPTIC TELEOPERATION SYSTEM</text>
+  <text x="43" y="81" class="s">One-DOF master · embedded control · servo-driven slave · distance-based force feedback</text>
+  <g fill="#1a334e" stroke="#38607d" stroke-width="2">
+    <rect x="44" y="127" width="243" height="132" rx="15"/>
+    <rect x="359" y="127" width="456" height="132" rx="15"/>
+    <rect x="887" y="127" width="267" height="132" rx="15"/>
+    <rect x="355" y="321" width="460" height="124" rx="15"/>
+    <rect x="43" y="321" width="245" height="124" rx="15"/>
+    <rect x="887" y="321" width="267" height="124" rx="15"/>
+  </g>
+  <text x="65" y="160" class="l">MASTER / HUMAN INPUT</text>
+  <text x="65" y="193" class="t">Haptic paddle</text>
+  <text x="65" y="217" class="d">Potentiometer · Arduino A0</text>
+  <text x="65" y="237" class="d">Measured angular position</text>
+  <text x="381" y="160" class="l">ARDUINO UNO · MATLAB/SIMULINK</text>
+  <text x="381" y="191" class="t">Calibration → Observer → Control</text>
+  <text x="381" y="217" class="d">20 ms discrete task · ADC scaling · velocity estimate</text>
+  <text x="381" y="240" class="d">Servo mapping and conditional PWM</text>
+  <text x="906" y="160" class="l">SLAVE / REMOTE MOTION</text>
+  <text x="906" y="193" class="t">LEGO robotic arm</text>
+  <text x="906" y="217" class="d">SG90 position control</text>
+  <text x="906" y="237" class="d">Commanded from paddle</text>
+  <text x="376" y="355" class="l">HAPTIC CONTROLLER</text>
+  <text x="376" y="385" class="t">Directional virtual wall</text>
+  <text x="376" y="408" class="d">Cubic K(d) · obstacle-side latch · PWM limiting</text>
+  <text x="62" y="355" class="l">FORCE OUTPUT</text>
+  <text x="62" y="385" class="t">IBT-2 + DC motor</text>
+  <text x="62" y="408" class="d">Resistive torque on paddle</text>
+  <text x="905" y="355" class="l">ENVIRONMENT MEASUREMENT</text>
+  <text x="905" y="385" class="t">HC-SR04 distance</text>
+  <text x="905" y="408" class="d">Filtered proximity reading</text>
+  <g fill="none" stroke="#73daf0" stroke-width="3.4" marker-end="url(#arrow)">
+    <path d="M287 193H359"/>
+    <path d="M815 193H887"/>
+    <path d="M585 259V321"/>
+    <path d="M355 390H288"/>
+  </g>
+  <g fill="none" stroke="#ffcd79" stroke-width="3.3" marker-end="url(#yellow)">
+    <path d="M1020 259V321"/>
+    <path d="M887 409H815"/>
+  </g>
+  <text x="305" y="181" class="s">ADC</text>
+  <text x="821" y="183" class="s">servo</text>
+  <text x="606" y="298" class="s">velocity and state</text>
+  <text x="679" y="462" class="s" fill="#ffcd79">proximity feedback</text>
+  <text x="43" y="488" class="s">Information flows shown conceptually; motor power uses an external 12 V supply.</text>
+</svg>
