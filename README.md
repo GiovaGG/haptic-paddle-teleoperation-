@@ -4,7 +4,7 @@
 
 Bachelor's thesis project by **Giovanni Gentiloni Silveri** — B.Sc. in Computer and Control Engineering, Sapienza University of Rome (2026).
 
-> **Project:** Design and implementation of a low-cost haptic paddle and its extension to a master–slave teleoperation demonstrator. This repository documents the experimentally developed system, selected controller functions reconstructed from the thesis, and standalone Arduino test sketches. **The complete executable Simulink `.slx` model is not included yet**; see [What is included](#what-is-included).
+> **Project:** Design and implementation of a low-cost haptic paddle and its extension to a master–slave teleoperation demonstrator. This repository documents the experimentally developed system, authentic screenshots of the Simulink subsystems from the thesis, and separate Arduino hardware-test sketches. **The complete executable Simulink `.slx` model is not included yet**; see [What is included](#what-is-included).
 
 ![System architecture](assets/system-architecture.svg)
 
@@ -76,7 +76,7 @@ More detail: [control algorithms and design decisions](docs/control-algorithms.m
 
 ## Simulink implementation — visual walkthrough
 
-All figures below are **extracted without alteration from the original thesis PDF**, rather than invented illustrations. They show the actual Simulink design; the underlying `.slx` project is not present in the repository.
+All screenshots below are taken from the original thesis PDF, rather than reconstructed MATLAB source files. They document **real Simulink subsystems** and the integration architecture. The underlying `.slx` model is not included.
 
 | Embedded paddle controller | Slave motion and sensing |
 | --- | --- |
@@ -116,19 +116,10 @@ All figures below are **extracted without alteration from the original thesis PD
     ├── arduino/
     │   ├── paddle_hardware_test/paddle_hardware_test.ino
     │   └── slave_sensor_test/slave_sensor_test.ino
-    ├── matlab/
-    │   ├── adc_to_radians.m
-    │   ├── adc_to_servo_angle.m
-    │   ├── virtual_wall_gain.m
-    │   ├── directional_obstacle_flag.m
-    │   ├── ultrasonic_distance_filter.m
-    │   ├── left_channel_gain.m
-    │   ├── right_channel_gain.m
-    │   └── run_basic_tests.m
-    └── simulink/README.md
+    └── simulink/README.md  (illustrated subsystem walkthrough)
 ```
 
-The `software/matlab/` functions are extracted or refactored from the algorithms documented in the thesis for standalone readability. They are **not a substitute for the original, integrated Simulink model**. The Arduino sketches are recreated from independent test programs in the thesis appendix; **neither sketch implements the full haptic teleoperation pipeline by itself**.
+The original **Simulink subsystem screenshots** are the documentation of the model implementation: see the [illustrated subsystem walkthrough](software/simulink/README.md) and [thesis screenshot gallery](docs/simulink-screenshots.md). **No reconstructed MATLAB `.m` implementations are published as substitutes for the missing `.slx` model.** Arduino sketches are independent hardware tests from the thesis appendix; neither sketch implements the complete teleoperation pipeline.
 
 ## Reproducing the demonstrator
 

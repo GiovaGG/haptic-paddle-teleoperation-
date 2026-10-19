@@ -16,8 +16,8 @@
 - The obstacle interaction does not directly measure force at the slave end effector.
 - There is no evidence of validated operation across a network or the public Internet.
 - A servo command reproduces the **mapped** paddle position, not necessarily an identical angle or torque.
-- The MATLAB reference functions and appendix Arduino tests are not a full deployable replacement for the absent Simulink model.
-- No photo/video or hardware CAD was included in the materials used to prepare this repository.
+- The Simulink screenshots and appendix Arduino tests are not a runnable replacement for the absent `.slx` model.
+- Photos and three short demonstration videos are available. Original CAD exports and the complete `.slx` are not included.
 
 ## Further validation to make this stronger for employers
 

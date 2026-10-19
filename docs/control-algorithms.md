@@ -39,7 +39,7 @@ A naive increase of viscous damping on *both* directions produced high resistanc
 
 The final solution uses the sign of the calibrated paddle angle to identify the obstacle side **when entering the close-range region** (`d < 5 cm`). The captured side remains latched while in proximity, with re-arming after `d > 15 cm`. The wall contribution `K(d)` is added to **only one PWM-processing channel**. The other channel retains the base damping coefficient `b`, allowing retreat without wall-added resistance.
 
-The original thesis MATLAB Function stores `flag_locked` even after releasing `locked` at the upper threshold: therefore, the stored flag can remain 1/2 at long distances. This does **not** create wall resistance at `d > 10 cm`, since `K(d)=0`; on re-entry after release the latch is updated. The extracted MATLAB function in this repository preserves that behavior rather than silently changing it.
+The original thesis MATLAB Function stores `flag_locked` even after releasing `locked` at the upper threshold: therefore, the stored flag can remain 1/2 at long distances. This does **not** create wall resistance at `d > 10 cm`, since `K(d)=0`; on re-entry after release the latch is updated. The thesis screenshot and accompanying description document that behavior; there is no standalone rewritten MATLAB function in this repository.
 
 The channel-specific functions in the thesis apply `b + K` to a particular PWM preprocessing channel. Any mapping from a logical direction flag to a **physical direction of rotation** must be verified on the device, because PWM channels were inverted during tuning.
 

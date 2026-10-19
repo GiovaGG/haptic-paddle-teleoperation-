@@ -7,6 +7,6 @@ Designed and integrated a low-cost, one-DOF haptic interface with a servo-actuat
 
 ## Suggested one-line CV link
 
-`Haptic Paddle & Teleoperation | Arduino, MATLAB/Simulink, haptic feedback — GitHub: https://github.com/YOUR-USERNAME/haptic-paddle-teleoperation`
+`Haptic Paddle & Teleoperation | Arduino, MATLAB/Simulink, haptic feedback — GitHub: https://github.com/GiovaGG/haptic-paddle-teleoperation-`
 
 Replace the username only **after** the public repository is actually created and its URL has been checked.

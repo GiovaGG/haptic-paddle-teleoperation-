@@ -20,11 +20,11 @@ git init
 git branch -M main
 git add .
 git commit -m "Document haptic teleoperation thesis project"
-git remote add origin https://github.com/TUO-USERNAME/haptic-paddle-teleoperation.git
+git remote add origin https://github.com/GiovaGG/haptic-paddle-teleoperation-.git
 git push -u origin main
 ```
 
-Prima crea un repository **vuoto** su GitHub e sostituisci `TUO-USERNAME`. Per usare Git da terminale servono Git installato e un'autenticazione GitHub valida. Se Git ti richiede user.name/user.email, configuralo sul tuo computer.
+Il repository esiste già; i comandi precedenti sono solo indicativi per una nuova copia locale e non vanno eseguiti per sovrascrivere il progetto pubblicato. Per usare Git da terminale servono Git installato e un'autenticazione GitHub valida. Se Git ti richiede user.name/user.email, configuralo sul tuo computer.
 
 ## Prima di renderlo pubblico
 
@@ -39,4 +39,4 @@ Prima crea un repository **vuoto** su GitHub e sostituisci `TUO-USERNAME`. Per u
 
 ## Nota sull'autenticità
 
-Gli script `.m` sono estratti/adattati dalle funzioni documentate nella tesi, mentre gli sketch Arduino sono test hardware standalone ricostruiti dall'appendice. Non sono stati sostituiti al modello Simulink effettivamente usato per l'integrazione finale. Pubblica il `.slx` reale quando disponibile.
+I blocchi Simulink sono documentati tramite **schermate autentiche dei subsystem**, estratte dalla tesi. Non sono pubblicate funzioni MATLAB `.m` ricostruite: gli sketch Arduino rimasti sono soltanto test hardware standalone ricostruiti dall'appendice. Il modello `.slx` completo non è ancora disponibile.
